@@ -201,25 +201,3 @@ main {
     max-width: var(--preview-max-w);
   }
 }
-
-/* Footer */
-footer {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-  padding-top: 1rem;
-}
-
-.social-links a {
-  color: var(--color-text-muted);
-  text-decoration: none;
-  margin-left: 1.5rem;
-  transition: color 0.2s ease;
-}
-
-.social-links a:hover {
-  color: var(--color-primary);
-}
