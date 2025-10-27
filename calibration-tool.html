@@ -7,6 +7,60 @@
   <title>ICVFXTools.com - Lens Calibration Grid Generator</title>
   <meta name="description"
     content="Generate checkerboard, grid, dots, ChArUco, AprilGrid, and AprilGrid with intersection markers." />
+  <meta name="author" content="ICVFX Tools" />
+
+  <meta property="og:title"
+    content="ICVFXTools.com - Building next-generation solutions for Virtual Production and Game Development." />
+  <meta property="og:description"
+    content="Generate checkerboard, grid, dots, ChArUco, AprilGrid, and AprilGrid with intersection markers." />
+  <meta property="og:image" content="https://www.icvfxtools.com/img/preview.png" />
+  <meta property="og:url" content="https://www.icvfxtools.com/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ICVFXTools.com - A showcase of advanced Unreal Engine plugins for ICVFX. " />
+  <meta name="twitter:description"
+    content="Generate checkerboard, grid, dots, ChArUco, AprilGrid, and AprilGrid with intersection markers." />
+  <meta name="twitter:image" content="https://www.icvfxtools.com/img/preview.png" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P3QKZ6E0HN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-P3QKZ6E0HN');
+  </script>
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.icvfxtools.com/" />
+
+  <!-- Language and region -->
+  <meta name="content-language" content="en-GB" />
+
+  <!-- Robots and indexing -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Keywords -->
+  <meta name="keywords"
+    content="Unreal Engine Plugins, Virtual Production Tools, ICVFX, LED Volume, Camera Tracking, Timecode Sync, HyperDeck Control, Unreal Marketplace, Color Grading, Cube LUT Importer" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ICVFXTools",
+      "url": "https://www.icvfxtools.com/",
+      "logo": "https://www.icvfxtools.com/img/favicon.svg",
+      "sameAs": [
+        "https://www.youtube.com/@ICVFXTools",
+        "https://www.instagram.com/icvfxtools",
+        "https://twitter.com/icvfxtools"
+      ],
+      "description": "ICVFXTools builds next-generation Unreal Engine plugins for Virtual Production and Game Development, including Network Timecode Sync, HYPRDeck Control, and Cube LUT Importer."
+    }
+  </script>
 
   <!-- External libs (same as your original) -->
   <script src="https://cdn.jsdelivr.net/npm/js-aruco@1.0.1/browser/aruco.min.js" defer></script>
@@ -45,7 +99,7 @@
               <option value="charuco">ChArUco</option>
               <option value="apriltag">AprilTag Grid</option>
             </select>
-            <span id="charuco-warn" class="warn hidden">ArUco library not loaded — ChArUco disabled (no JSON).</span>
+            <!-- <span id="charuco-warn" class="warn hidden">ArUco library not loaded — ChArUco disabled (no JSON).</span> -->
             <span id="bitdb-status" class="badge">Loading aruco_bitmaps.json…</span>
           </div>
 
@@ -60,9 +114,9 @@
           </div>
 
           <div class="control-row">
-            <div class="control-group"><label for="rows">Rows (inner)</label><input id="rows" type="number" value="8"
+            <div class="control-group"><label for="rows">Rows (inner)</label><input id="rows" type="number" value="9"
                 min="2" step="1" /></div>
-            <div class="control-group"><label for="cols">Cols (inner)</label><input id="cols" type="number" value="11"
+            <div class="control-group"><label for="cols">Cols (inner)</label><input id="cols" type="number" value="13"
                 min="2" step="1" /></div>
           </div>
 
@@ -70,7 +124,7 @@
             <div class="control-group"><label for="output-w">Output Width (px)</label><input id="output-w" type="number"
                 value="1920" min="320" step="10" /></div>
             <div class="control-group" id="cell-size-group"><label for="cell-size">Cell Size (px)</label><input
-                id="cell-size" type="number" value="50" min="2" step="1" /></div>
+                id="cell-size" type="number" value="100" min="2" step="1" /></div>
           </div>
 
           <div class="control-row">
@@ -81,7 +135,7 @@
           </div>
 
           <div class="control-group hidden" id="dot-radius-group"><label for="dot-radius">Dot Radius (×
-              cell)</label><input id="dot-radius" type="number" value="0.10" min="0.05" max="0.50" step="0.01" /></div>
+              cell)</label><input id="dot-radius" type="number" value="0.25" min="0.05" max="0.50" step="0.01" /></div>
 
           <!-- ChArUco -->
           <div class="control-group hidden" id="charuco-dict-group">
@@ -150,11 +204,11 @@
               <option value="25h9">25h9</option>
               <option value="16h5">16h5</option>
             </select>
-            <span id="apriltag-offline" class="badge hidden">Offline fallback: tags are NOT decodeable</span>
+            <!-- <span id="apriltag-offline" class="badge hidden">Offline fallback: tags are NOT decodeable</span> -->
           </div>
           <div class="control-row hidden" id="apriltag-grid-opts">
             <div class="control-group"><label for="apriltag-tag-size">Tag Size (px)</label><input id="apriltag-tag-size"
-                type="number" value="40" min="2" step="1" /></div>
+                type="number" value="80" min="2" step="1" /></div>
             <div class="control-group"><label for="apriltag-spacing-ratio">Spacing Ratio</label><input
                 id="apriltag-spacing-ratio" type="number" value="0.25" min="0" step="0.01" /></div>
           </div>
@@ -198,7 +252,7 @@
           </div>
           <div class="control-group hidden" id="apriltag-intersection-size">
             <label for="apriltag-intersection-px">Intersection Square Size (px)</label>
-            <input id="apriltag-intersection-px" type="number" value="5" min="1" step="1" />
+            <input id="apriltag-intersection-px" type="number" value="20" min="1" step="1" />
           </div>
 
           <button id="generate" class="action-btn">Generate / Refresh</button>
@@ -219,6 +273,16 @@
 
   <!-- Our app -->
   <script type="module" src="./js/main.js"></script>
+
+  <!-- Footer -->
+  <footer>
+    <span>© 2025 ICVFXTools. All Rights Reserved.</span>
+    <div class="social-links">
+      <a href="#">X</a>
+      <a href="#">INSTAGRAM</a>
+      <a href="https://www.youtube.com/@ICVFXTools">YOUTUBE</a>
+    </div>
+  </footer>
 </body>
 
 </html>
