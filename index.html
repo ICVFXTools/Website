@@ -4,24 +4,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ICVFXTools.com - Building next-generation solutions for Virtual Production and Game Development.</title>
+  <title>ICVFXTools | Unreal Engine Plugins for Virtual Production</title>
   <meta name="author" content="ICVFX Tools" />
   <meta name="description"
-    content="A showcase of advanced Unreal Engine plugins for ICVFX, including Cube LUT Importer, Network Timecode Sync, and HYPRDeck Control." />
+    content="Discover advanced Unreal Engine plugins for virtual production and ICVFX workflows, including timecode sync, HyperDeck control, Cube LUT import, and lens calibration tools." />
 
-  <meta property="og:title"
-    content="ICVFXTools.com - Building next-generation solutions for Virtual Production and Game Development." />
+  <meta property="og:title" content="ICVFXTools | Unreal Engine Plugins for Virtual Production" />
   <meta property="og:description"
-    content="A showcase of advanced Unreal Engine plugins for ICVFX, including Cube LUT Importer, Network Timecode Sync, and HYPRDeck Control." />
+    content="Advanced Unreal Engine plugins for virtual production: timecode sync, HyperDeck control, Cube LUT import, KeyFlux, and calibration tools." />
   <meta property="og:image" content="https://www.icvfxtools.com/img/preview.png" />
   <meta property="og:url" content="https://www.icvfxtools.com/" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ICVFXTools" />
+  <meta property="og:locale" content="en_US" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ICVFXTools.com - A showcase of advanced Unreal Engine plugins for ICVFX. " />
+  <meta name="twitter:title" content="ICVFXTools | Unreal Engine Plugins for Virtual Production" />
   <meta name="twitter:description"
-    content="Building next-generation solutions for Virtual Production and Game Development." />
+    content="Advanced Unreal Engine plugins for virtual production and ICVFX workflows." />
   <meta name="twitter:image" content="https://www.icvfxtools.com/img/preview.png" />
+  <meta name="twitter:site" content="@icvfxtools" />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P3QKZ6E0HN"></script>
@@ -36,29 +38,45 @@
   <link rel="canonical" href="https://www.icvfxtools.com/" />
 
   <!-- Language and region -->
-  <meta name="content-language" content="en-GB" />
+  <meta name="content-language" content="en" />
 
   <!-- Robots and indexing -->
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
 
   <!-- Keywords -->
   <meta name="keywords"
     content="Unreal Engine Plugins, Virtual Production Tools, ICVFX, LED Volume, Camera Tracking, Timecode Sync, HyperDeck Control, Unreal Marketplace, Color Grading, Cube LUT Importer" />
 
+  <link rel="alternate" hreflang="en" href="https://www.icvfxtools.com/" />
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "ICVFXTools",
-      "url": "https://www.icvfxtools.com/",
-      "logo": "https://www.icvfxtools.com/img/favicon.svg",
-      "sameAs": [
-        "https://www.youtube.com/@ICVFXTools",
-        "https://www.instagram.com/icvfxtools",
-        "https://twitter.com/icvfxtools"
-      ],
-      "description": "ICVFXTools builds next-generation Unreal Engine plugins for Virtual Production and Game Development, including Network Timecode Sync, HYPRDeck Control, and Cube LUT Importer."
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.icvfxtools.com/#organization",
+          "name": "ICVFXTools",
+          "url": "https://www.icvfxtools.com/",
+          "logo": "https://www.icvfxtools.com/img/favicon.svg",
+          "sameAs": [
+            "https://www.youtube.com/@ICVFXTools",
+            "https://www.instagram.com/icvfxtools",
+            "https://twitter.com/icvfxtools"
+          ],
+          "description": "ICVFXTools builds next-generation Unreal Engine plugins for Virtual Production and Game Development."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.icvfxtools.com/#website",
+          "url": "https://www.icvfxtools.com/",
+          "name": "ICVFXTools",
+          "description": "Advanced Unreal Engine plugins for virtual production and ICVFX workflows.",
+          "publisher": {
+            "@id": "https://www.icvfxtools.com/#organization"
+          }
+        }
+      ]
     }
   </script>
 
@@ -490,10 +508,10 @@
 
     <!-- Left Content: Plugin Details -->
     <div class="plugin-display">
-      <h1 id="pluginTitle"></h1>
-      <p id="pluginDescription"></p>
+      <h1 id="pluginTitle">Unreal Engine Plugins for Virtual Production</h1>
+      <p id="pluginDescription">Explore advanced ICVFX tools for color workflows, timecode sync, HyperDeck control, and production automation.</p>
       <div class="button-group">
-        <a href="#" id="marketplaceLink" class="action-btn" target="_blank">
+        <a href="#" id="marketplaceLink" class="action-btn" target="_blank" rel="noopener noreferrer">
           <!-- Marketplace Icon -->
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path
@@ -502,7 +520,7 @@
           </svg>
           Marketplace
         </a>
-        <a href="#" id="youtubeLink" class="action-btn" target="_blank">
+        <a href="#" id="youtubeLink" class="action-btn" target="_blank" rel="noopener noreferrer">
           <!-- YouTube Icon -->
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path
@@ -511,7 +529,7 @@
           </svg>
           YouTube
         </a>
-        <a href="#" id="documentationLink" class="action-btn" target="_blank">
+        <a href="#" id="documentationLink" class="action-btn" target="_blank" rel="noopener noreferrer">
           <!-- Documentation Icon (Book) -->
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path
@@ -520,7 +538,7 @@
           </svg>
           Documentation
         </a>
-        <a href="#" id="forumLink" class="action-btn" target="_blank">
+        <a href="#" id="forumLink" class="action-btn" target="_blank" rel="noopener noreferrer">
           <!-- Forum Icon (People) -->
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path
@@ -539,9 +557,10 @@
     <footer>
       <span>© 2025 ICVFXTools. All Rights Reserved.</span>
       <div class="social-links">
-        <a href="#">X</a>
-        <a href="#">INSTAGRAM</a>
+        <a href="https://twitter.com/icvfxtools" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="https://www.instagram.com/icvfxtools" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
         <a href="https://www.youtube.com/@ICVFXTools">YOUTUBE</a>
+        <a href="https://www.icvfxtools.com/calibration-tool.html">CALIBRATION TOOL</a>
       </div>
     </footer>
   </main>
